@@ -37,7 +37,7 @@ $pass='';
                     if($result->num_rows==1){
                         session_start();
                         $_SESSION['user_name']=mysqli_fetch_assoc($result)['user_name'];
-                        header("Location: home.php");
+                        header("Location: home");
                     }else{
                         print_r("Email or Password Doesn't Matched");
                     }
